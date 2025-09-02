@@ -39,9 +39,9 @@
     <script>
       var yakin = confirm("apakah kamu yakin tidak membuka from ini");
        if (yakin){
-       document.write("");  
+        window.location = "https://otakudesu.best/anime/akamoto-day-part-2-sub-indo/";
        } else{
-          window.location = "https://otakudesu.best/anime/akamoto-day-part-2-sub-indo/";
+        document.write("");
        }
     </script>
     <!-- Form input -->
@@ -49,24 +49,45 @@
       <!-- <label>Nama Kamu:</label> -->
       <script>
         var nama = prompt("Apa yang Mau Kamu Minta ?", "Data pribadi" );
-        document.write("<p><b>"+ nama +"</b></p><br>");
+        document.write("<p><b>"+ nama +"</b></p>");
     </script>
     <form>
-        Nama
       <input type="text" id="saya" required>
-        umur
+        
+    <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "umur" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="umur" required>
-        no hp
+     <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "no hp" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="no_hp" required>
-        riwayat penyakit
+     <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "riwayat penyakit" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="riwayat_penyakit" required>
-        genjala awal
+     <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "genjala awal" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="genjala_awal" required>
-        Nama ibu
+     <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "nama ibu" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="ibu" required>
-        Nama ayah
+       <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "nama ayah" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>
       <input type="text" id="ayah" required>
-        nik  
+     <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "nik" );
+        document.write("<p><b>"+ nama +"</b></p>");
+    </script>  
       <input type="text" id="nik" required>
       <button type="submit">Kirim</button>
      </form>
