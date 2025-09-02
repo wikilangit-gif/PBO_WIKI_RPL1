@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Mendefinisikan tipe dokumen HTML5 -->
+<html lang="id"> <!-- Elemen utama halaman, dengan bahasa Indonesia -->
+ 
+<head>
+  <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif untuk perangkat mobile -->
+  <title>Rumah Sakit</title> <!-- Judul tab browser -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Import font Poppins -->
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script> <!-- Library ikon Feather -->
+
+  <link rel="stylesheet" href="dia 1.css"> <!--Link ke file CSS eksternal-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== Navbar ==================== -->
+  <nav class="navbar"> <!-- Navbar utama -->
+    <a href="#" class="navbar-logo">Rumah Sakit</a> <!-- Logo atau nama merek -->
+
+    <div class="navbar-nav"> <!-- Navigasi halaman -->
+      <a href="Home.html">Home</a> <!-- Link ke halaman Home -->
+      <a href="Tentang Kami.html">Tentang Kami</a> <!-- Link ke halaman Tentang Kami -->
+      <a class="tombol" href="Layanan.html">Layanan</a> <!-- Link ke halaman Layanan -->
+      <a href="Kontak.html">Kontak</a> <!-- Link ke halaman Kontak -->
+      <a href="Raisya.html">Biodata</a> <!-- Link ke halaman Biodata -->
+    </div>
+  </nav>
+
+  <!-- ==================== Formulir ==================== -->
+    <div class="Formulir"> <!-- Container formulir -->
+    <h1 style="text-transform: uppercase; text-align:center;">
+      Formulir Pendaftaran Pasien <!-- Judul utama formulir -->
+    </h1>
+    <script>
+      var yakin = confirm("apakah kamu yakin tidak membuka from ini");
+       if (yakin){
+       document.write("");  
+       } else{
+          window.location = "https://otakudesu.best/anime/akamoto-day-part-2-sub-indo/";
+       }
+    </script>
+    <!-- Form input -->
+     <form id="FormSaya">
+      <!-- <label>Nama Kamu:</label> -->
+      <script>
+        var nama = prompt("Apa yang Mau Kamu Minta ?", "Data pribadi" );
+        document.write("<p><b>"+ nama +"</b></p><br>");
+    </script>
+    <form>
+        Nama
+      <input type="text" id="saya" required>
+        umur
+      <input type="text" id="umur" required>
+        no hp
+      <input type="text" id="no_hp" required>
+        riwayat penyakit
+      <input type="text" id="riwayat_penyakit" required>
+        genjala awal
+      <input type="text" id="genjala_awal" required>
+        Nama ibu
+      <input type="text" id="ibu" required>
+        Nama ayah
+      <input type="text" id="ayah" required>
+        nik  
+      <input type="text" id="nik" required>
+      <button type="submit">Kirim</button>
+     </form>
+     <!-- Form dengan ID 'formPasien' -->
+
+  </div>
+
+  <!-- ==================== Hasil Output ==================== -->
+  <div id="gatau" style="display:none;"></div> <!-- Container untuk menampilkan hasil input -->
+
+  <!-- ==================== Script JavaScript ==================== -->
+  <script>
+    const form = document.getElementById("FormSaya"); // Ambil elemen form
+    const hasil = document.getElementById("gatau"); // Ambil elemen hasil
+    
+    form.addEventListener("submit", function(dahtau) {
+      dahtau.preventDefault(); // Mencegah halaman reload saat form disubmit
+
+      // Ambil nilai dari semua input
+      const aku = document.getElementById("saya").value;
+      const umur = document.getElementById("umur").value;
+      const no_hp = document.getElementById("no_hp").value;
+      const riwayat_penyakit = document.getElementById("riwayat_penyakit").value;
+      const genjala_awal = document.getElementById("genjala_awal").value;
+      const ibu = document.getElementById("ibu").value;
+      const ayah = document.getElementById("ayah").value;
+      const nik = document.getElementById("nik").value;
+
+      // Tampilkan data dalam elemen hasil
+      hasil.style.display = "block"; // Tampilkan elemen yang awalnya disembunyikan
+      hasil.innerHTML = `
+        <h2>DATA PRIBADI</h2>
+        <b><p>nama :</b>${aku}</p> 
+        <b><p>umur : </b>${umur}</p> 
+        <b><p>no hp : </b>${no_hp}</p> 
+        <b><p>riwayat penyakit : </b>${riwayat_penyakit}</p> 
+        <b><p>genjala awal :</b>${genjala_awal}</p> 
+        <b><p>ibu : </b>${ibu}</p> 
+        <b><p>ayah :</b>${ayah}</p> 
+        <b><p>nik : </b>${nik}</p> 
+      `;
+    });
+  </script>
+
+
+</body>
+</html>

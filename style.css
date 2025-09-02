@@ -1,0 +1,23 @@
+   #gatau {
+  max-width: 600px;                 /* Lebar maksimum hasil */
+  margin: 30px auto;                /* Tengah dan jarak dari atas */
+  background-color: #ffffff;        /* Latar putih */
+  border-left: 6px solid #6c63ff;   /* Garis warna di kiri */
+  padding: 20px 30px;               /* Padding dalam */
+  border-radius: 8px;               /* Sudut membulat */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Bayangan halus */
+  color: #333;                      /* Warna teks */
+}
+
+#gatau h2 {
+  margin-top: 0;                    /* Hilangkan margin atas */
+  color: #6c63ff;                   /* Warna judul biru */
+  font-size: 20px;                  /* Ukuran judul */
+  border-bottom: 1px solid #eee;    /* Garis bawah abu muda */
+  padding-bottom: 10px;             /* Jarak ke bawah */
+}
+
+#gatau p {
+  margin: 8px 0;                    /* Jarak atas dan bawah */
+  line-height: 1.5;                 /* Jarak antar baris */
+}
